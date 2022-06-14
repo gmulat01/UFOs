@@ -43,7 +43,7 @@ function handleClick() {
   buildTable(filteredData);
 };
 
-d3.selectAll("#filter-btn").on("click", handleClick);
+d3.selectAll("#filter-input").on("change", filterTable);
 
 // Build the table when the page loads
 buildTable(tableData);
